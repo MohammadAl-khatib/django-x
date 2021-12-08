@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block title %} {{car.name}} {% endblock %}
+
+{% block content %} 
+    <h1>{{car.name}}</h1>
+    <h2>{{car.price}}</h2>
+    <img src={{car.image}} alt="car" style="width: 600px">
+    <button><a href="{% url 'car_update' car.pk %}">Edit</a></button>
+    <button><a href="{% url 'car_delete' car.pk %}">Delete</a></button>
+
+{% endblock %}
