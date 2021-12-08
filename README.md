@@ -1,1 +1,1 @@
-PR: 
+PR: https://github.com/MohammadAl-khatib/django-x/pull/1
